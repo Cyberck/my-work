@@ -51,7 +51,7 @@
     font-size: 18px;
     line-height: 30px;
     font-family: var(--MR);
-    color: #000000;
+    color: var(--text);
     text-align: center;
     background: var(--body);
     border-radius: 8px;
