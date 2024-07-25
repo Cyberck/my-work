@@ -347,11 +347,49 @@ margin-top: 10px;
 /**** Extern start ****/
 
 
-.extern__column-right {
+.extern {
     margin-top: 75px;
+
+}
+
+.extern__left-box {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 30px 30px 30px 30px;
+}
+.extern__column-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.extern__left-title {
+    font-size: 36px;
+    line-height: 41px;
+    font-family: var(--MSB);
+    color: var(--purple);
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.extern__left-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--MR);
+    color: #000000;
+    background: var(--body);
+
+}
+
+.extern__right-box {
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
 }
 
 .extern__right-title {
@@ -360,22 +398,30 @@ margin-top: 10px;
     font-family: var(--MSB);
     color: var(--purple);
     margin-bottom: 20px;
-    max-width: 350px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-left: 50px;
 }
 
-.extern__right-text {
+.extern-title {
+    font-size: 24px;
+    line-height: 41px;
+    font-family: var(--MSB);
+    color: var(--purple);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.extern-text {
     font-size: 18px;
     line-height: 30px;
     font-family: var(--MR);
     color: #000000;
-    text-align: justify;
-    background: var(--body);
-    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
-    border-radius: 8px;
-    padding: 30px 30px 30px 30px;
 }
+
+
 
 
 /**** Extern end ****/
@@ -573,7 +619,16 @@ margin-top: 10px;
     }
 }
 
+@media (max-width:1400px) {
+    .extern__column-right {
+        margin-top: 50px;
+    }
 
+    .extern__right-title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+}
 
 @media (max-width:1200px) {
     .about::before,
@@ -583,6 +638,10 @@ margin-top: 10px;
     .about__description,
     .capabilities__image {
         margin-top: 50px;
+    }
+
+    .extern{
+        margin-top: 120px;
     }
 
     .work__tab-title{
