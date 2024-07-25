@@ -1,0 +1,96 @@
+@import 'fonts.css';
+
+/* Root start */
+
+:root {
+    --MR: 'Montserrat Regular';
+    --MSB: 'Montserrat SemiBold';
+    --MBI: 'Montserrat BoldItalic';
+    --MB: 'Montserrat Black';
+    --TBI: 'Trebuchet BoldItalic';
+    --TB: 'Trebuchet Bold';
+    --body: #ffffff;
+    --text: #323232;
+    --dots: #828282;
+    --dots-active: #7177F1;
+    --purple: #7177F1;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background: #9297EF;
+    transition: all 500ms;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.footer:hover {
+    box-shadow: 0px 0px 500px 800px rgba(113, 119, 241, 0.15);
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left__logo {
+    height: 200px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-right__contacts {
+
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--MR);
+    color: #000000;
+    text-align: center;
+    background: var(--body);
+    border-radius: 8px;
+    padding: 10px 0px;
+    transition: all 500ms;
+}
+
+.footer-right__contacts:hover {
+    color: white;
+    background: green;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-right__contacts {
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+
+}
+
+
+
+
